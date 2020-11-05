@@ -12,7 +12,7 @@
 * {
     box-sizing: border-box;
     font-family: Raleway;
-    color: #777;
+    color: rgb(80, 5, 5);
 }
 
 html, body {
@@ -40,7 +40,7 @@ html, body {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
+    border-bottom: 1px solid  rgb(80, 5, 5);
 }
 
 .main-nav li {
@@ -48,12 +48,12 @@ html, body {
 }
 
 .nav a:hover {
-    background-color: rgba(255, 255, 255, .3)
+    background-color: rgba(19, 1, 1, 0.3);
 }
 
 .main-header {
     background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Header Background.jpg");
+    background-image: url("Images/bookstorebg.jpg");
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
@@ -98,7 +98,7 @@ html, body {
 }
 
 .main-footer {
-    background-color: #56CCF2;
+    background-color: #630e08;
     color: white;
     padding: .25em 0;
 }
@@ -132,7 +132,7 @@ html, body {
 .btn-header {
     margin: .5em 15% 2em 15%;
     color: white;
-    border: 2px solid #2D9CDB;
+    border: 2px solid #5c0a07;
     background-color: rgba(255, 255, 255, .1);
     border-radius: 0;
     font-size: 1.5em;
@@ -142,13 +142,13 @@ html, body {
 }
 
 .btn-header:hover {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(24, 1, 1, 0.3);
 }
 
 .btn-play {
     display: block;
     margin: 0 auto;
-    color: #2D9CDB;
+    color: #64180b;
     font-size: 4em;
     border-radius: 50%;
     width: 100px;
@@ -159,14 +159,14 @@ html, body {
 
 .btn-primary {
     color: white;
-    background-color: #56CCF2;
+    background-color: #7e0505;
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    background-color: #860a06;
 }
 
 .tour-row {
@@ -212,7 +212,7 @@ html, body {
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    color: #333;
+    color: rgb(109, 6, 6);
     margin-bottom: 15px;
 }
 
@@ -228,7 +228,7 @@ html, body {
 
 .shop-item-price {
     flex-grow: 1;
-    color: #333;
+    color: rgb(102, 6, 6);
 }
 
 .shop-items {
@@ -240,7 +240,7 @@ html, body {
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: rgb(128, 9, 9);
 }
 
 .cart-column {
@@ -263,7 +263,7 @@ html, body {
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: rgb(104, 11, 11);
 }
 
 .cart-quantity {
@@ -271,7 +271,7 @@ html, body {
 }
 
 .cart-item-title {
-    color: #333;
+    color: rgb(104, 11, 11);
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -284,23 +284,23 @@ html, body {
 
 .btn-danger {
     color: white;
-    background-color: #EB5757;
+    background-color: #6d0606;
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-danger:hover {
-    background-color: #CC4C4C;
+    background-color: #770404;
 }
 
 .cart-quantity-input {
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #56CCF2;
+    border: 1px solid #990505;
     background-color: #eee;
-    color: #333;
+    color: rgb(26, 2, 2);
     padding: 0;
     text-align: center;
     font-size: 1.2em;
@@ -329,7 +329,7 @@ html, body {
 }
 
 .cart-total-price {
-    color: #333;
+    color: rgb(95, 10, 10);
     font-size: 1.1em;
 }
 

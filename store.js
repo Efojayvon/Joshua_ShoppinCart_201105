@@ -23,10 +23,23 @@ for(var i=0 ; i<removeCartItemButtons.length;i++){
          var button= addToCartButtons[i]
          button.addEventListener('click',addToCartClicked)
      }
-
+     
+     document.getElementsByClassName('btn-purchase')[0].addEventListener('cick',purchasedClicked)
 }
 
 
+//ACTIVATING THE CHECKOUT BUTTON
+function purchasedClicked(){
+    alert('Thank You for your purchase');
+    var cartItems=document.getElementsByClassName('cart-item')[0];
+    while (cartItems.hasChildNodes()){
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal();
+}
+
+
+//FUNCTION TO REMOVE CART ITEM
  function removeCartItem(event){
     var buttonClicked=event.target;
     buttonClicked.parentElement.parentElement.remove();
@@ -92,10 +105,10 @@ function updateCartTotal(){
         var cartRow=cartRows[i];
         var priceElement= cartRow.getElementsByClassName('cart-price')[0];
         var quantityElement= cartRow.getElementsByClassName('cart-quantity-input')[0];
-        var price = parseFloat(priceElement.innerText.replace('$',''));
+        var price = parseFloat(priceElement.innerText.replace('GHS',''));
         var quantity= quantityElement.value;
         total+=(price*quantity);
         total =Math.round(total*100)/100;
     }
-    document.getElementsByClassName('cart-total-price')[0].innerText= '$'+ total;
+    document.getElementsByClassName('cart-total-price')[0].innerText= 'GHS'+ total;
 }
