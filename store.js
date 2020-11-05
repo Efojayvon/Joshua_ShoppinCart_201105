@@ -24,14 +24,14 @@ for(var i=0 ; i<removeCartItemButtons.length;i++){
          button.addEventListener('click',addToCartClicked)
      }
      
-     document.getElementsByClassName('btn-purchase')[0].addEventListener('cick',purchasedClicked)
+     document.getElementsByClassName('btn-purchase')[0].addEventListener('click',purchaseClicked)
 }
 
 
 //ACTIVATING THE CHECKOUT BUTTON
-function purchasedClicked(){
+function purchaseClicked(){
     alert('Thank You for your purchase');
-    var cartItems=document.getElementsByClassName('cart-item')[0];
+    var cartItems=document.getElementsByClassName('cart-items')[0];
     while (cartItems.hasChildNodes()){
         cartItems.removeChild(cartItems.firstChild)
     }
